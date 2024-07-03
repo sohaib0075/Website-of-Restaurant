@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Payment Page</title>
+<link href="payment_page.css" rel="stylesheet" type="text/css">  <!--Attaching CSS style sheet -->
+<link rel="icon" href="Pictures/logo.png" type="image/x-icon">  <!-- adding icon to the browser bar -->
+</head>
+
+<body>
+	<div class="bg"> <!-- division of page to a background. -->
+		<div class="navbar"> <!--division used for navigation bar -->
+			<div>
+				<img src="Pictures/logo.png" alt= "Logo"> <!-- adding logo to navigation bar -->
+			</div>
+		</div>
+		<h1 class="heading" align="center" style="letter-spacing: 5px;">Payment</h1> <!-- aligning heading to centre and giving 5px space -->
+		<div class="row">
+		  	<div class="column">
+				<form class="form">
+					<h3 class="heading" align="center">Billing Address</h3><br> <!-- heading for billing address -->
+					<label class="label">Name:</label><br>
+					<input type="text" id="name" name="fname" class="textbox"><br><br> <!-- input for name -->
+					<label class="label">Contact:</label><br>
+					<input type="text" id="contact" name="fname" class="textbox"><br><br> <!-- input for contact -->
+					<label class="label">Email:</label><br>
+					<input type="text" id="email" name="lname" class="textbox"><br><br> <!-- input for -->
+					<label class="label">Sreet Address 1:</label><br>
+					<input type="text" id="address1" name="username" class="textbox"><br><br> <!-- input for address -->
+					<label class="label">Address 2:</label><br>
+					<input type="text" id="address2" name="password" class="textbox"><br><br>
+				</form>
+		  	</div>
+		  	<div class="column">
+				<form class="form">
+					<h3 class="heading" align="center">Payment options</h3>
+					<input type="radio" id="COD" name="paymentopt"> <!-- input for payment method using radio buttons -->
+					<label class="check">Cash On Delivery</label><br>
+					<input type="radio" id="creditopt" name="paymentopt">
+					<label class="check">Credit Card Options</label><br><br>
+					<div class="creditopt">
+					<label class="label">Credit Card Holder:</label><br> 
+					<input type="text" id="CCH" name="fname" class="textbox"><br><br> <!-- input for credit card holder name -->
+					<label class="label">Card Number:</label><br>
+					<input type="text" id="cardno." name="lname" class="textbox"><br><br> <!-- input for card number -->
+					<label class="label">Expiry Date:</label><br>
+					<input type="text" id="expDate" name="username" class="textbox"><br><br> <!-- input for expiry date -->
+					<label class="label">CV:</label><br>
+					<input type="text" id="CV" name="password" class="textbox"><br><br> <!-- input for CV -->
+					</div>	
+				</form>
+		 	</div>
+		</div>
+		<div class="row">
+		<a href="home_page.html"> <!-- linking the button to the home page -->
+		<button class="button">Confirm Payment</button></a> <!-- button tags for confirm payment -->
+		</div>
+	</div>
+	<footer class = "footer"> <!-- footer division -->
+		<div class="footerContent"> <!-- footer content division -->
+			<p class="footertxt">Contact: 090078601<br> <a href="mailto:howdy@gmail.com" class="footertxt">howdy@gmail.com</a></p> <!-- footer text -->
+			<img src="Pictures/facebook.png" class="footerimg"> <!-- footer image for fascebook -->
+			<img src="Pictures/instagram.png" class="footerimg"> <!-- footer image for instagram -->
+			<img src="Pictures/twitter.png" class="footerimg"> <!-- footer image for twitter -->
+		</div>
+	</footer>
+</body>
+</html>

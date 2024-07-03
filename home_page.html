@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home Page</title>
+	<link href="home_page.css" rel="stylesheet" type="text/css"> <!--Attaching CSS style sheet -->
+	<link rel="icon" href="Pictures/logo.png" type="image/x-icon"> <!-- adding icon to the browser bar -->
+</head>
+
+<body>
+	<div class="bg"> <!-- division of page to a background. -->
+	<div class="navbar"> <!--division used for navigation bar -->
+			<div>
+				<img src="Pictures/logo.png"> <!-- adding logo to navigation bar -->
+			</div>
+			<nav>
+				<ul id="HomePageItems"> <!-- navigation bar item divison -->
+					<li><a href="home_page.html">Home</a></li> <!-- linking to home page -->
+					<li><a href="menu_page.html">Menu</a></li> <!-- linking to Menu page -->
+					<li><a href="deal_page.html">Deals</a></li> <!-- linking to deal page -->
+					<li><a href="login_page.html">Login</a></li> <!-- linking to login page -->
+					<li><a href="cart_page.html"> <img class="img" src="Pictures/cart.png"></a></li> <!-- linking to cart page -->
+				</ul>
+			</nav>
+		</div>
+		<div class="slider-holder"> <!-- division for classholder -->
+			<span id="slider-image-1"></span> <!-- all of these span makes the content in line-->
+			<span id="slider-image-2"></span>
+			<span id="slider-image-3"></span>
+			<div class="image-holder"> <!-- division for image holder -->
+				<img src="Pictures/home1.jpg" class="slider-image" /> <!-- all the images are attached nect to eachother inline-->
+				<img src="Pictures/home2.jpg" class="slider-image" />
+				<img src="Pictures/home3.jpg" class="slider-image" />
+			</div>
+			<div class="button-holder"> <!-- divsion for the button holder -->
+				<a href="#slider-image-1" class="slider-change"></a> <!-- button are small circle which moves accordingly to the picture -->
+				<a href="#slider-image-2" class="slider-change"></a>
+				<a href="#slider-image-3" class="slider-change"></a>
+			</div>
+		</div>
+		<div class="details"> <!-- divison for the details. -->
+				<h1 class="heading">About us</h1>
+				<img src="Pictures/home4.png" class= "img1"> <!-- image is attached under the about us details-->
+				<h2 class="heading">WELCOME TO HOWDY</h2> <!-- heading -->
+				<!-- ALl the text of about us is written below-->
+				<p class="para">HOWDY! is the pioneer in introducing high quality real charcoal grilled gourmet burgers in Pakistan.</p>
+				<p class="para">At Howdy! You will find a combination of excellent burgers, steaks, sandwiches and a lot more at value pricing, with a fun packaged atmosphere at our every outlet. The purpose is not only to serve great food but also make it a delightful experience for the guests.</p>
+				<p class="para">Food is served in a friendly & lively environment in a 'see-thru kitchen' based on an exciting live cooking concept. Every outlet uses the Old West Cowboy's theme, where excellent and friendly customer service supports the ambiance of a fun, energetic and happy lifestyle.</p>
+		</div>
+		<footer class = "footer"> <!-- footer division -->
+		<div class="footerContent"> <!-- footer content division -->
+			<p class="footertxt">Contact: 090078601<br> <a href="mailto:howdy@gmail.com" class="footertxt">howdy@gmail.com</a></p> <!-- footer text -->
+			<img src="Pictures/facebook.png" class="footerimg"> <!-- footer image for fascebook -->
+			<img src="Pictures/instagram.png" class="footerimg"> <!-- footer image for instagram -->
+			<img src="Pictures/twitter.png" class="footerimg"> <!-- footer image for twitter -->
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cart</title>
+	<link href="cart_page.css" rel="stylesheet" type="text/css"> <!--Attaching CSS style sheet -->
+	<link rel="icon" href="Pictures/logo.png" type="image/x-icon">  <!-- adding icon to the browser bar -->
+</head>
+
+<body>
+	<div class="bg"> <!-- division of page to a background. -->
+	<div class="navbar"> <!--division used for navigation bar -->
+			<div>
+				<img src="Pictures/logo.png"> <!-- adding logo to navigation bar -->
+			</div>
+			<nav>
+				<ul id="HomePageItems"> <!-- navigation bar item divison -->
+					<li><a href="home_page.html">Home</a></li> <!-- linking to home page -->
+					<li><a href="menu_page.html">Menu</a></li> <!-- linking to Menu page -->
+					<li><a href="deal_page.html">Deals</a></li> <!-- linking to deal page -->
+					<li><a href="login_page.html">Login</a></li> <!-- linking to login page -->
+					<li><a href="cart_page.html"> <img class="img" src="Pictures/cart.png"></a></li> <!-- linking to cart page -->
+				</ul>
+			</nav>
+		</div>
+		<div class="grid-container"> <!-- division for grid -->
+			<div class="row item1"> <!-- displaying first row and giving it item 1 -->
+				<div class="column"> <!-- first column is used for picture -->
+					<img src="Pictures/burger1.png" class="colimg"> <!-- attaching picture -->
+				</div>
+				<div class="column"> <!-- second column is used to list information  -->
+					<p class="name"> SON OF A BUN</p>
+					<p class="price"> PK 899</p>
+					<p class="quantity"> Quantity: 3</p>
+				</div>
+
+			</div>
+			<div class="big_column item2"> <!-- big column is bascially the total payment card which was row span by 4 rows -->
+				<p class="total_amount">899 x 3 = 2,697</p> <!-- all the prices are calculated -->
+				<p class="total_amount">999 x 1 = 999</p>
+				<p class="total_amount">399 x 2 = 798</p>
+				<p class="total_amount">399 x 4 = 1,596</p>
+				<p class="total_amount">Total Amount: PK 6,090/-</p> <!-- total amount displayed  -->
+				<a href="payment_page.html">
+				<button class="button">proceed to pay</button></a> <!-- button to which is linked to payment page -->
+			</div>
+			<div class="row item3"> <!-- displaying first row and giving it item 3 -->
+				<div class="column">
+					<img src="Pictures/burger4.png" class="colimg"> <!-- first column is used for picture -->
+				</div>
+				<div class="column"> <!-- second column is used to list information  -->
+					<p class="name"> Volcando </p>
+					<p class="price"> PK 999</p>
+					<p class="quantity"> Quantity: 1</p>
+				</div>
+			</div>
+			<div class="row item4"> <!-- displaying first row and giving it item 4 -->
+				<div class="column">
+					<img src="Pictures/fries1.png" class="colimg"> <!-- first column is used for picture -->
+				</div>
+				<div class="column"> <!-- second column is used to list information  -->
+					<p class="name"> SHerif's fav</p>
+					<p class="price"> PK 399</p>
+					<p class="quantity"> Quantity: 2</p>
+				</div>
+			</div>
+			<div class="row item5"> <!-- displaying first row and giving it item 5 -->
+				<div class="column">
+					<img src="Pictures/wings1.png" class="colimg"> <!-- first column is used for picture -->
+				</div>
+				<div class="column"> <!-- second column is used to list information  -->
+					<p class="name"> Wild CHicks</p>
+					<p class="price"> PK 399</p>
+					<p class="quantity"> Quantity: 4</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class = "footer"> <!-- footer division -->
+		<div class="footerContent"> <!-- footer content division -->
+			<p class="footertxt">Contact: 090078601<br> <a href="mailto:howdy@gmail.com" class="footertxt">howdy@gmail.com</a></p> <!-- footer text -->
+			<img src="Pictures/facebook.png" class="footerimg"> <!-- footer image for fascebook -->
+			<img src="Pictures/instagram.png" class="footerimg"> <!-- footer image for instagram -->
+			<img src="Pictures/twitter.png" class="footerimg"> <!-- footer image for twitter -->
+		</div>
+	</footer>
+</body>
+</html>

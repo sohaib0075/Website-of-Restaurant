@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {  /* importing an font family */
+	font-family: Cowboys; 
+	src:url('Cowboys.ttf'); /* Cowboy family font is impoted */
+}
+@font-face { /* importing an font family */
+	font-family: Rancho;
+	src:url('Rancho-Regular.ttf'); /* rancho family font is impoted */
+}
+
+*{ /* universal paddings and margins are set to zero */
+	margin: 0;
+	padding: 0;
+}
+
+.bg{ /* background class */
+    heigh: 100%; /* max width and height are assigned to the background*/
+    width: 100%;
+      background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('Pictures/backgroud.jpg'); /* An image is added to background and filtered it colour */
+      background-repeat: no-repeat; /* background is not repeated*/
+      background-position: center; /* positon is centred*/
+     background-attachment: fixed; /* attachment is fixed and background doesnt move with scrolling*/
+      background-size: cover; /* background covers all the aspect ratio */
+      
+      position: relative; /* postion is relative, it keeps moving on webpage to stay at same place on screen*/
+      height: auto; /* setting the height of the webpage */
+  }
+img{
+	width: 100px; /* logo is given a height and width*/
+	height: 100px;
+}
+.navbar{
+	display: flex; /* it makes all the items move in a single line */
+	align-items: center; /* all items are allighned to the centre*/
+	padding: 20px; /* paddings are added accordingly*/
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+nav{  /* styling nav */
+	flex: 1;
+	text-align: right;
+}
+
+nav ul{ /* styling the ul element in navigatiuon bar*/
+	display: inline-block;
+	list-style: none;
+}
+
+nav ul li{ /* styling the list of naviation bar  */
+	display: inline-block;
+	margin-right: 70px;
+}
+
+nav ul li a{ /* styling all the naviagtion bar items and its text */
+	color: gold;
+	font-family: Cowboys; /* custom text used */
+	text-decoration: none; /* to remove underlines etc */
+	font-size: 20px;
+	text-shadow: 1px 1px #000000; /* to add a weight and make font asthetic */
+	
+}
+
+.img{ /* to style the cart on navigation bar */
+	width: 50px;
+	height: 50px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+nav ul li a:hover{ /* to make text white while cursor hover on it */
+	color: wheat;
+}
+
+.img:hover{ /* to enlarge the cart while cursor hover on it */
+	padding-left: 0px;
+	padding-top: 0px;
+	width: 60px;
+	height: 60px;
+}
+
+
+.column {
+	float: left; /* to make things allign towrds left  */
+  	width: 250px;
+	height: auto; /*setting the size of the column */
+  	padding-top: 5px;
+	padding-bottom: 10px;  /* adding padding to the card */
+	margin-left: 75px;
+	margin-right: 75px; /* to increase spaces.*/
+	background-color: rgba(0, 0, 0, 0.5);  /*to provide black transparent background to the column  */
+	border-radius: 5%;
+	text-align: center;
+	display: inline-block;  /* makes the disply inline.  */
+  	
+}
+.row { 
+ 	width: 1200px; /* adjusting the width of the row */
+	height: auto; /* automatically height is calculated */
+	margin-left: auto;
+	margin-right: auto; /* auto margins make the row allign in center */
+	margin-top: 80px;
+	text-align: center;
+	overflow: hidden; /* to hide anything that cross the border of rows */
+	border-radius: 15px; /* to make border round */
+	
+}
+
+.deal_pic{ /* to style the image of the deal */
+	padding: 5px;
+	width: 220px; /* adjusting size and padding accordingly */
+	max-height: 100%;
+	height: 300px;
+	margin-top: 15px;
+}
+.d1{ /* styling the text of the details */
+	color: gold;
+	font-family: Cowboys;
+	text-shadow: 1px 1px #000000;
+}
+.d2{ /* styling the text of the details */
+	color: whitesmoke;
+	font-family: Rancho;
+	text-shadow: 1px 1px #ff0000;
+}
+.d3{ /* styling the text of the details */
+	color: orange;
+	font-family: Rancho;
+	text-shadow: 1px 1px #000000;
+}
+.button {  /* to style the button */
+	font-family: Rancho; /* custom text */
+	text-decoration: none; /* to remove underlines of the text */
+	font-size: 120%; /*  increase font size*/
+	background-image: linear-gradient(90deg, gold, red); /* add custom colour to the button */
+	color: white; /* text color is white  */
+	border-radius: 10px; /* to make button round */
+	padding: 5px;
+	text-shadow: 2px 2px #000000; /* to make text look asthetic */
+}
+.button:hover { /* to change the color of button if user hower with the cursor */
+	background-image: linear-gradient(90deg, black, red);
+	color: white;
+}
+.column:hover {
+	background-color: rgba(196,169,169,0.5);
+}
+.heading{ /* to style the heading used in the page */
+	margin-top: 10px;
+	font-family: Cowboys; /*custom text */
+	color: gold;
+	letter-spacing: 5px; /* adding letter space to the hading*/
+	text-shadow: 5px 5px #000000;
+}
+.UCdeals{ 
+	width: 1200px; /* adjusting the width of the row */
+	height: auto; /* automatically height is calculated */
+	margin-left: auto;
+	margin-right: auto; /* auto margins make the row allign in center */
+	margin-top: 80px;
+	text-align: center; 
+	overflow: hidden; /* to hide anything that cross the border of rows */
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+}
+.footer{ /*to style the footer of the page*/
+	margin-top: 50px;
+	text-align: center;
+	background-image: linear-gradient(180deg, darkorange, orange); /* adding background color */
+	position: sticky; /* so that the footer stick at the bottom of the page */
+	bottom: 0;
+	
+}
+.footerContent{ /* to style the content in the footer */
+	margin-left: auto; /* auto margin makes it to allign centre because of inherit properties*/
+	margin-right: auto;
+	width: 600px;
+	display: flex; /* to display inline and fill all the spaces*/
+	padding: 5px;
+}
+.footerimg{ /* to style logos attached in the footer */
+	width: 50px;
+	height: inherit;
+}
+.footertxt{ /* to style the text in the footer */
+	color: black;
+	font-family: Rancho;
+	text-shadow: 1px 1px #f0f0f0;
+	text-decoration: none;
+	font-size: 120%
+}

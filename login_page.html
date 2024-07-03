@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="login_page.css"> <!--Attaching CSS style sheet -->
+	<link rel="icon" href="Pictures/logo.png" type="image/x-icon"> <!-- adding icon to the browser bar -->
+	<meta charset="utf-8">
+	<title>Login</title>
+</head>
+
+<body>	
+<div class="bg"> <!-- division of page to a background. -->
+	<div class="navbar"> <!--division used for navigation bar -->
+			<div>
+				<img src="Pictures/logo.png"> <!-- adding logo to navigation bar -->
+			</div>
+			<nav>
+				<ul id="HomePageItems"> <!-- navigation bar item divison -->
+					<li><a href="home_page.html">Home</a></li> <!-- linking to home page -->
+					<li><a href="menu_page.html">Menu</a></li> <!-- linking to Menu page -->
+					<li><a href="deal_page.html">Deals</a></li> <!-- linking to deal page -->
+					<li><a href="login_page.html">Login</a></li> <!-- linking to login page -->
+					<li><a href="cart_page.html"> <img class="img" src="Pictures/cart.png"></a></li> <!-- linking to cart page -->
+				</ul>
+			</nav>
+		</div>
+	<h1>WELCOME TO<br>HOWDY'S!</h1>  <!-- heading -->
+	<div class="row"> <!-- rows divison to have multiple entries as column in same line  -->
+	<h3 class="loginsquare"> <!-- division to login square  -->
+		<div class="loginbox"> <!-- division to login box  -->
+			<h2>Log In</h2><br><br> <!-- heading -->
+			<form>
+				<label>USERNAME:</label><br> <!-- input for username-->
+				<input type="text" id="username" name="username" class="textbox"><br><br>
+				<label>PASSWORD:</label><br>
+				<input type="text" id="password" name="username" class="textbox"><br><br> <!-- input for password-->
+				<label style="font-size: 6pt;">REMEMBER ME?</label> <!-- check box for remember me status-->
+				<input type="checkbox" id="checkbox" name="checkbox"><br><br>
+				<a href="home_page.html" class ="button">Login</a> <!-- button which is linked to home page-->
+			</form>
+		</div>
+	</h3>
+	<h3 class="signupsquare"> <!-- division to signup square  -->
+		<div class="signupbox"> <!-- division to signup box  -->
+			<h2>Sign Up</h2><br><br>
+			<form>
+				<label>FIRST NAME:</label><br>
+				<input type="text" id="fname" name="fname" class="textbox"><br><br> <!-- input for firt name-->
+				<label>LAST NAME:</label><br>
+				<input type="text" id="lname" name="lname" class="textbox"><br><br> <!-- input for last name-->
+				<label>USERNAME:</label><br>
+				<input type="text" id="username1" name="username" class="textbox"><br><br> <!-- input for username-->
+				<label>PASSWORD:</label><br>
+				<input type="text" id="password1" name="password" class="textbox"><br><br> <!-- input for password-->
+				<a href="home_page.html" class ="button">Sign Up</a> <!-- button which is linked to home page-->
+			</form>
+		</div>
+	</h3>
+	</div>
+</div>
+	<footer class = "footer"> <!-- footer division -->
+		<div class="footerContent"> <!-- footer content division -->
+			<p class="footertxt">Contact: 090078601<br> <a href="mailto:howdy@gmail.com" class="footertxt">howdy@gmail.com</a></p> <!-- footer text -->
+			<img src="Pictures/facebook.png" class="footerimg"> <!-- footer image for fascebook -->
+			<img src="Pictures/instagram.png" class="footerimg"> <!-- footer image for instagram -->
+			<img src="Pictures/twitter.png" class="footerimg"> <!-- footer image for twitter -->
+		</div>
+	</footer>
+</body>	
+</html>
